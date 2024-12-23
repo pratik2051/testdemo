@@ -1,0 +1,15 @@
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <servlet>
+    <servlet-name>bookServlet</servlet-name>
+    <servlet-class>java.web.bookServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>bookServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+</web-app>
+
