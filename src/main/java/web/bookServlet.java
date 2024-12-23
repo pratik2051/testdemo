@@ -34,6 +34,9 @@ import java.util.List;
 
             try {
                 switch (action) {
+//                    case "/list":
+//                        listBook(request, response);
+//                        break;
                     case "/new":
                         showNewForm(request, response);
                         break;
@@ -46,11 +49,9 @@ import java.util.List;
                     case "/edit":
                         showEditForm(request, response);
                        break;
-                   case "/list":
-                       listBook(request, response);
-                          break;
+
                     default:
-                        insertBook(request, response);
+                        listBook(request, response);
                         break;
                 }
             } catch (SQLException ex) {

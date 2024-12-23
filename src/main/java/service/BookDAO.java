@@ -6,9 +6,14 @@ import model.Book;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 public class BookDAO {
     private String jdbcURL = "jdbc:mysql://localhost:3306/booksDB";
+
     private String jdbcUsername = "root";
     private String jdbcPassword = "Pk@2051720159";
 
@@ -23,12 +28,10 @@ public class BookDAO {
     }
 
     protected Connection getConnection(){
-        System.out.println("Hellooooooopppppppppppppppp");
         Connection connection = null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
-            System.out.print("hellopopop");
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.print("hello");
@@ -37,7 +40,6 @@ public class BookDAO {
             System.out.print("hi");
 
         }
-        System.out.print("hello000");
 
         return connection;
     }
