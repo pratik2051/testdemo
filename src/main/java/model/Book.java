@@ -5,7 +5,9 @@ public class Book {
     private String name;
     private String isbn;
 
-    public Book(){}
+    public Book() {
+    }
+
     public Book(String name, String isbn) {
         this.name = name;
         this.isbn = isbn;
