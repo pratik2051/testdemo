@@ -24,7 +24,7 @@ To use this we need following configuration in our machine
  
 
 
-2. API Documentation is done with swagger the pom xml is configured accordingly.
+2. API Documentation is on file API documentation
 
 3. The refactored approach can be 
  ***************************************************************************
