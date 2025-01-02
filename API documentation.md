@@ -5,7 +5,7 @@ API Endpoints
 1. GET /
    • Description: Fetches and displays the list of all books.
    • Request Parameters: None
-   • Request Body: None
+   • Request Body: Non
    • Response:
    o Renders the index.jsp page.
    o Sets the following attribute:
