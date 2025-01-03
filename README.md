@@ -43,11 +43,12 @@ To use this we need following configuration in our machine
  ****************************************************************************
 4. To fix this issue, we need to explicitly set the array slot of the popped element to null in the pop() method. This ensures that the reference is cleared, allowing the garbage collector to reclaim the memory if there are no other references to the object.
 
-********************************The corrected code*****************************
+************************* The corrected code *****************************
+   
    import java.util.Arrays;
    import java.util.EmptyStackException;
 
-public class Stack {
+    public class Stack {
     private Object[] elements;
     private int size = 0;
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
