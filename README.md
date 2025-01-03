@@ -45,8 +45,8 @@ To use this we need following configuration in our machine
 
 ************************* The corrected code *****************************
    
-   import java.util.Arrays;
-   import java.util.EmptyStackException;
+  </n> import java.util.Arrays;
+  </n> import java.util.EmptyStackException;
 
     public class Stack {
     private Object[] elements;
